@@ -11,6 +11,8 @@ if(A.length==2){
 //look commented code below we can calculate sum of all elements in array in different way 
 //and I think it should work faster then this traditional old fashion way of finding arraySum when 
 //number of elements in array is very large;
+//but maybe due Locality of reference // cache hit will be higher when we access array sequentially so traditional good old way 
+//is porobably faster
 int ArraySum =0;
 int lastIndex = A.length -1;
 for(int i = 0; i <= lastIndex; i++){
