@@ -27,3 +27,6 @@ https://codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/
 
 #MissingInteger
 https://codility.com/programmers/lessons/4-counting_elements/missing_integer/
+
+#FrogRiverOne
+https://codility.com/programmers/lessons/4-counting_elements/frog_river_one/
