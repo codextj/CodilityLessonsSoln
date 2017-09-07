@@ -1,4 +1,6 @@
-public int[] solution(int[] A, int K)
+class Solution {
+   
+       public int[] solution(int[] A, int K)
     {
         
         int size = A.length;
@@ -11,3 +13,5 @@ public int[] solution(int[] A, int K)
         }
         return rotatedArray;
    }  
+    
+}
