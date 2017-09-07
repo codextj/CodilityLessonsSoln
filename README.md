@@ -1,4 +1,10 @@
 # CodelityLessonsSoln
+
+#Every soln mentioned in this repo scored 100% in correctness as well as 100% in performance
+
+#just copy paste the code in CODELITY EDITOR and it will WORK LIKE CHARM
+
+#BUT I STRONGLY ENCOURAGE YOU TO TRY TO SOLVE PROBLEM ON YOUR FIRST
 https://codility.com/programmers/lessons/
 
 #
