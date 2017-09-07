@@ -1,4 +1,4 @@
-//code in Version 1 PermMissingNumV1.java is more readable
+//code in Version 1 PermMissingNumV1.java is more readable so PLEASE READ PermMissingElemV1.java code first
 
 /*algorithm is same as previous version V1 only some minor changes mentioned below to try to increase performance but I think perfromance 
 benefits are almost negligiable AS BOTH THE VERSION SCORED 100% in performance*/
