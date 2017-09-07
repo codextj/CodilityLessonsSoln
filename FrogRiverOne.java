@@ -1,29 +1,5 @@
 
 import java.util.HashSet;
-/* 
-frog should jump when Xth leaf falls in river but he can reach Xth leaf only when all the leaf from 1-->X-1 has already fallen 
-So to reach POS X+1 
-it is neccesary that X unique leafs representing X unique position from 1-->X has fallen
-for eg leaf (3,[1,2,3]) here X is 3 and array A is [1,2,3]
- leaf pos						[1,2,3]
- fallenAt time given by index    0,1,2 second
- so at time == 2 seconds frog should jump
- 
- eg 2	    (3,[1,2,1,2,3])
- leaf pos						[1,3,1,2,3]
- fallenAt time given by index    0,1,2,3,4 second		
- it is only at time == 4 seconds when leaf at pos 3 has fallen so frog can reach at POS 4(ie X+1) only when all the leaf 1-->X are in river
- so when Xth leaf appears & all the leaf from 1-->X-1 are fallen frog can jump
- 
-  when array length is 1
-  pos		 [1]  
-  time/index  0
- (1,[1]) time 0 second
-  pos 		 [5]
-  time/index  -1 
- (anyNumber other then 1,[anyNumber other then 1]) time  -1 ,frog can't reach as leaf at pos 1 has never fallen so how can we reach any other leaf 
-*/
-
 class Solution {
    public int solution(int X, int[] A)
   {
@@ -48,9 +24,37 @@ class Solution {
     }
 }
 
+/*  Explaination
+frog should jump when Xth leaf falls in river but he can reach Xth leaf only when all the leaf from 1-->X-1 has already fallen 
+So to reach POS X+1 
+it is neccesary that X unique leafs representing X unique position from 1-->X has fallen
+for eg leaf (3,[1,2,3]) here X is 3 and array A is [1,2,3]
+ leaf pos		        [1,2,3]
+ fallenAt time given by index    0,1,2 second
+ so at time == 2 seconds frog should jump
+ 
+ eg 2	    (3,[1,2,1,2,3])
+ leaf pos			[1,3,1,2,3]
+ fallenAt time given by index    0,1,2,3,4 second		
+ it is only at time == 4 seconds when leaf at pos 3 has fallen so frog can reach at POS 4(ie X+1) only when all the leaf 1-->X are in river
+ so when Xth leaf appears & all the leaf from 1-->X-1 are fallen frog can jump
+ 
+  when array length is 1
+  pos	     [1]  
+  time/index  0
+ (1,[1]) time 0 second
+  pos 	      [5]
+  time/index  -1 
+ (anyNumber other then 1,[anyNumber other then 1]) time  -1 ,frog can't reach as leaf at pos 1 has never fallen so how can we reach any other leaf 
+*/
 
-------------------------------- journey that I have gone through before reaching to that soln
-------------------------------- only if had remembered about hashset that hashset dont allow duplicate values
+
+
+/*
+ journey that I have gone through before reaching to the soln written above,
+ only if I had remembered about hashset that hashset dont allow duplicate values
+
+my first instant approach to solve the problem but then I read ....this line 
 class Solution {
  public int solution(int X, int[] A)
 {
@@ -60,16 +64,20 @@ class Solution {
 
 }
 }
+
+...that the frog can cross only when leaves appear at every position across the river from 1 to X 
+thats why just looking for when leaf falls at position X is not enough 
+we need to make sure whether all the leaf from 1-->X-1 has fallen or not as only then frog will able to reach Xth leaf 
+*/ 
  
- 
- 
+/* 
 import java.util.Arrays;
 class Solution {
  public int solution(int X, int[] A)
 { 
-  /*
-  The frog can cross only when leaves appear at every position across the river from 1 to X 
-  */
+  
+  //The frog can cross only when leaves appear at every position across the river from 1 to X 
+  
   if(A[0]==X)
   {   while(X!=1)
       X--;
@@ -124,3 +132,4 @@ class Solution {
   }
 
 }
+*/
