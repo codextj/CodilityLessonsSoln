@@ -1,3 +1,5 @@
+/*Author : codextj | tanmayjain.cs@gmail.com */
+
 function solution(A) {
      write your code in JavaScript (Node.js 8.9.4)
 

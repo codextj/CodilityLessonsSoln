@@ -1,4 +1,4 @@
-https://app.codility.com/demo/results/trainingWGQKMZ-44Q/
+/*Author : codextj | tanmayjain.cs@gmail.com */
 
 function solution(N, A) {
     // write your code in JavaScript (Node.js 8.9.4)

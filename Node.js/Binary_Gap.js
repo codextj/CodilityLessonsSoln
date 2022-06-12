@@ -1,3 +1,5 @@
+/*Author : codextj | tanmayjain.cs@gmail.com */
+
 function solution(N) {
     // to handle negative numbers
     // (N >>> 0).toString(2)
